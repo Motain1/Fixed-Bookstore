@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Books from "./pages/Books";
-import BookInfo from "./pages/BookInfo";
+import Home from "./Pages/Home";
+import Books from "./Pages/Books";
+import BookInfo from "./Pages/Bookinfo";
 import { books } from "./data";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import Cart from "./pages/Cart";
+import Cart from "./Pages/Cart"
 import { counter } from "@fortawesome/fontawesome-svg-core";
 
 function App() {
@@ -92,7 +92,7 @@ function App() {
         <Route
           path="/cart"
           render={() => (
-            <Cart
+            <Cart 
               cart={cart}
               updateCart={updateCart}
               removeItem={removeItem}
